@@ -3,7 +3,7 @@ class UserManager:
         self.users = []
 
     def add_user(self, username):
-        if not username: 
+        if not username:
             raise ValueError("Le nom d'utilisateur est obligatoire")
         if username in self.users:
             raise ValueError("L'utilisateur existe déjà")
@@ -16,6 +16,7 @@ class UserManager:
 
     def count_users(self):
         return len(self.users)
+
+
 def count_total_users(users):
-     
-     return len(users)
+    return len(users)
